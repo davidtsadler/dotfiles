@@ -1,3 +1,1 @@
-#!/bin/sh
-
-exec ~/.local/bin/dwm
+.config/xinitrc
