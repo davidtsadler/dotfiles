@@ -1,0 +1,5 @@
+[user]
+	name = David T. Sadler
+	email = davidtsadler@googlemail.com
+[core]
+	excludesfile = ~/.config/git/gitignore_global
