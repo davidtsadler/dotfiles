@@ -2,3 +2,9 @@
 # As such we can't use the git command in this directory if we want to work with the repo.
 # Instead the dotfiles alias is used.
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/src/dotfiles --work-tree=$HOME'
+
+alias ll='ls -l'
+
+alias cp='cp -iv'
+alias rm='rm -iv'
+alias mv='mv -iv'
