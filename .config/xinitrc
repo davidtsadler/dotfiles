@@ -1,4 +1,10 @@
 #!/bin/sh
 
+# xinitrc runs when you run starx
+
+# Source xprofile as that contains commands that need run whenever we startx.
+# Commands are kept in xprofile as that will run automatically if a display manager is used when logging in.
+. ~/.xprofile
+
 exec ~/.local/bin/dwm
 
