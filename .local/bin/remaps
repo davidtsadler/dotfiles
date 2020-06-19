@@ -1,3 +1,4 @@
 #!/bin/sh
 
 setxkbmap -layout gb
+setxkbmap -option caps:super
