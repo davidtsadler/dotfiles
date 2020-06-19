@@ -6,5 +6,5 @@
 # Commands are kept in xprofile as that will run automatically if a display manager is used when logging in.
 . ~/.xprofile
 
-exec ~/.local/bin/dwm
+exec dwm
 
