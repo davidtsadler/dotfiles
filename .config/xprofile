@@ -1,3 +1,4 @@
 #!/bin/sh
 
 remaps & # Sets correct keyboard layout and remaps some keys to make life easier in dwm.
+dwmblocks &
