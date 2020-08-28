@@ -1,36 +1,19 @@
-#
-# ~/.bashrc
-#
+#Configuration
 
-## If not running interactively, don't do anything.
-[[ $- != *i* ]] && return
+## VI mode
+bindkey -v
 
-## Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | paste -sd ':')"
-
-# Default programs.
-export EDITOR="nvim"
-export TERMINAL="st"
-export BROWSER="brave"
-
-## Keep the home directory tidy.
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME="$HOME/.cache"
-
-# Configure bash history
+# Configure history
 
 ## Where the bash history file is saved
-HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/bash_history"
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
 
 ## Don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
-## Append to the history file, don't overwrite it
-shopt -s histappend
-
 ## The number of commands to remember in the command history.
 HISTSIZE=1000
+SAVEHIST=1000
 
 ## The maximum number of lines contained in the history file
 HISTFILESIZE=2000
@@ -44,3 +27,9 @@ HISTFILESIZE=2000
 export NVM_DIR="$HOME/.local/src/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## Powerlevel10k
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+## To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
