@@ -1,22 +1,80 @@
-filetype on
-filetype plugin on
-filetype indent on " file type based indentation
+"""""""
+" VIM "
+"""""""
 
 set nobackup
 set nowb
 set noswapfile
 
+""""""""""
+" UI "
+""""""""""
+
 colorscheme railscasts
-syntax on " syntax highlighting on
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+" Syntax highlighting on.
+syntax on
 
-set number " turn on line numbers
+" Turn on line numbers.
+set number
+
+filetype on
+
+filetype plugin on
+
+" Load filetype-specific indent files.
+filetype indent on
 
 :set wrap linebreak nolist
+
+" Highlight matching [{()}]
+set showmatch
+
+" Open new split panes to right and bottom.
+set splitright
+set splitbelow
+
+"""""""""""""""""
+" SPACES & TABS "
+"""""""""""""""""
+
+" Number of visual spaces per tab.
+set tabstop=2
+
+" Number of spaces in tab when editing.
+set softtabstop=2
+
+" Number of spaces that text is shifted when using << and >>.
+set shiftwidth=2
+
+" Tabs are spaces.
+set expandtab
+
+"""""""""""""""""
+" FINDING FILES "
+"""""""""""""""""
+
+" Search down into subfolders.
+set path+=**
+
+" Ignore these directories when finding.
+set wildignore+=**/.git/**
+set wildignore+=**/node_modules/**
+set wildignore+=**/vendor/**
+
+" Display all matching files when we tab complete.
+set wildmenu
+
+"""""""""""""""
+" TAG JUMPING "
+"""""""""""""""
+
+" Creates the 'tags' file.
+command! MakeTags !ctags -R --exclude@.ctagsignore .
+
+""""""""
+" MISC "
+""""""""
 
 " Shortcuts provided by http://vimcasts.org
 

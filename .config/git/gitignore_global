@@ -3,3 +3,5 @@
 .local/src/dwm/
 .local/src/st/
 .ssh
+.notes.md
+notes.md
