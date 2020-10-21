@@ -12,5 +12,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-
+    " Theme
+    Plug 'jpo/vim-railscasts-theme'
 call plug#end()
