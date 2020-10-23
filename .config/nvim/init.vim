@@ -4,3 +4,4 @@ source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/general/commands.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/themes/railscasts.vim
+source $HOME/.config/nvim/themes/airline.vim

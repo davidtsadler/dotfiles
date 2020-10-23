@@ -12,3 +12,11 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Tab navigation.
+nnoremap <C-t> :tabnew<CR>
+inoremap <C-t> <Esc>:tabnew<CR>
+nnoremap H gT
+nnoremap L gt
+
+
