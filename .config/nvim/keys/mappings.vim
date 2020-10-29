@@ -16,7 +16,7 @@ nnoremap <C-l> <C-w>l
 " Tab navigation.
 nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <Esc>:tabnew<CR>
+nnoremap <C-space> :sp<CR>
+inoremap <C-space> <Esc>:sp<CR>
 nnoremap H gT
 nnoremap L gt
-
-
