@@ -13,13 +13,14 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Window splitting.
+nnoremap <C-space> :sp<CR>
+nnoremap <M-space> :vsp<CR>
+inoremap <C-space> <Esc>:sp<CR>
+inoremap <M-space> <Esc>:vsp<CR>
+
 " Tab navigation.
 nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <Esc>:tabnew<CR>
-nnoremap <C-space> :sp<CR>
-nnoremap <M-space> :vsp<CR>
-nnoremap <C-space> :sp<CR>
-inoremap <C-space> <Esc>:sp<CR>
-inoremap <M-space> <Esc>:vsp<CR>
 nnoremap H gT
 nnoremap L gt
