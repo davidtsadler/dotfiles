@@ -17,6 +17,9 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <Esc>:tabnew<CR>
 nnoremap <C-space> :sp<CR>
+nnoremap <M-space> :vsp<CR>
+nnoremap <C-space> :sp<CR>
 inoremap <C-space> <Esc>:sp<CR>
+inoremap <M-space> <Esc>:vsp<CR>
 nnoremap H gT
 nnoremap L gt
