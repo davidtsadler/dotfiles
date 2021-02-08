@@ -7,14 +7,13 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    " Distraction free writing
+    Plug 'junegunn/goyo.vim'
     " Theme
     Plug 'jpo/vim-railscasts-theme'
     " Airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    " COC
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
