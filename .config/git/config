@@ -3,3 +3,5 @@
 	email = davidtsadler@googlemail.com
 [core]
 	excludesfile = ~/.config/git/gitignore_global
+[init]
+	defaultBranch=main
