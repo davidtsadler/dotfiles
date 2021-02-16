@@ -1,0 +1,13 @@
+#!/bin/sh
+
+[ -z "$1" ] && exit
+
+REPO="/home/david/projects/davidtsadler.co.uk"
+GITGEM="git --git-dir=$REPO/.git --work-tree=$REPO"
+
+$REPO/scripts/thought-bubble $@ &&
+$REPO/scripts/deploy
+# Not sure if I want to push up to GitHub every time there is a thought bubble so do it manually for the moment.
+# $GITGEM add public/thought_bubbles.gmi &&
+# $GITGEM commit -m "Thought Bubble" &&
+# $GITGEM push
